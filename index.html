@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://d3js.org/d3.v5.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <title>Global Temperature Heat Map</title>
+</head>
+<body>
+    <h1 id="title">Global Land-Surface Temperature Overview</h1>
+    <h4 id="description">Monthly temperatures from 1753 to 2015. Average temperature: 8.66°C</h4>
+    <div id="tooltip"></div>
+    <svg id="canvas"></svg>
+
+    <div id="legend">
+       <div class="legend-item">
+        <svg width="40" height="40">
+            <rect width="40" height="40" fill="SteelBlue"></rect>
+        </svg>
+        <span>Temperature Anomaly of -1°C or less</span>
+       </div>
+
+       <div class="legend-item">
+        <svg width="40" height="40">
+            <rect width="40" height="40" fill="LightSteelBlue"></rect>
+        </svg>
+        <span>On or Below Average</span>
+       </div>
+
+       <div class="legend-item">
+        <svg width="40" height="40">
+            <rect width="40" height="40" fill="Orange"></rect>
+        </svg>
+        <span>Above Average</span>
+       </div>
+
+       <div class="legend-item">
+        <svg width="40" height="40">
+            <rect width="40" height="40" fill="Crimson"></rect>
+        </svg>
+        <span>Temperature Anomaly of +1°C or more</span>
+       </div>
+    </div>
+
+    <script defer src="script.js"></script>
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+</body>
+</html>
